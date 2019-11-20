@@ -1,0 +1,21 @@
+{
+  "body-json": {
+    "action": "REPLACE",
+    "permission_document": [
+      {
+        "resource": "s3:bucket0",
+        "permission": "Read",
+        "user_id": [
+          "irenetester"
+        ]
+      },
+      {
+        "resource": "s3:bucket1",
+        "permission": "Write",
+        "user_id": [
+          "irenetester"
+        ]
+      }
+    ]
+  }
+}

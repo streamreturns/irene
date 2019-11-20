@@ -1,0 +1,21 @@
+{
+  "body-json": {
+    "action": "APPEND",
+    "permission_document": [
+      {
+        "resource": "s3:bucket0/object",
+        "permission": "Full",
+        "user_id": [
+          "irenetester"
+        ]
+      },
+      {
+        "resource": "s3:bucket1/object",
+        "permission": "Write",
+        "user_id": [
+          "irenetester"
+        ]
+      }
+    ]
+  }
+}

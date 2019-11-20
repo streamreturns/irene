@@ -1,0 +1,14 @@
+{
+  "body-json": {
+    "action": "DELETE",
+    "permission_document": [
+      {
+        "resource": "s3:bucket/object",
+        "permission": "Full",
+        "user_id": [
+          "irenetester"
+        ]
+      }
+    ]
+  }
+}
