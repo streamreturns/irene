@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ireneGlueBasic0",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:GetTables",
+                "glue:GetDatabases",
+                "glue:GetTable"
+            ],
+            "Resource": [
+                "arn:aws:glue:{region_name}:{aws_account_id}:table/*",
+                "arn:aws:glue:{region_name}:{aws_account_id}:database/*",
+                "arn:aws:glue:{region_name}:{aws_account_id}:catalog"
+            ]
+        },
+        {
+            "Sid": "ireneGlueBasic1",
+            "Effect": "Allow",
+            "Action": [
+                "glue:CreateTable",
+                "glue:DeleteTable"
+            ],
+            "Resource": [
+                "arn:aws:glue:{region_name}:{aws_account_id}:database/default",
+                "arn:aws:glue:{region_name}:{aws_account_id}:catalog"
+            ]
+        }
+    ]
+}
