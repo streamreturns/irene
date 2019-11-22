@@ -6,7 +6,9 @@
             "Effect": "Allow",
             "Action": [
                 "glue:GetDatabase",
+                "glue:GetPartition",
                 "glue:GetTables",
+                "glue:GetPartitions",
                 "glue:GetDatabases",
                 "glue:GetTable"
             ],
